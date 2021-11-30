@@ -1,0 +1,331 @@
+
+// * {
+//   box-sizing: border-box;
+// }
+
+svg:not(:root) {
+  overflow: hidden;
+} 
+
+// line: {
+//   z-index:2
+// }
+.annotationLayer {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+} 
+
+.textLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.5;
+  line-height: 1.0;
+  // font-weight: ;
+  // z-index: 1000;
+  color: transparent !important;
+  // z-index: 0;
+  opacity: 1;
+  mix-blend-mode: multiply;  
+}
+
+.textLayer > div {
+  // color: transparent !important;
+    position: absolute;
+    white-space: pre;
+    cursor: text;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+
+.textLayer .highlight {
+  margin: -1px;
+  padding: 1px;
+  // background-color: rgba(255, 0, 0, 0.5);
+}
+
+// .textLayer .highlight.selected {
+//   background-color: rgba(255, 0, 0, 0.5); // rgba(255, 0, 0, 0.6); //
+// }
+
+.textLayer .highlight.begin {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.textLayer .highlight.end {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.textLayer .highlight.middle {
+  border-radius: 0px;
+}
+
+// .textLayer .highlight.selected {
+//   background-color: rgba(242,146,146, 0.8); //rgba(255, 0, 0, 0.5); // rgba(255, 0, 0, 0.6); //
+// }
+
+
+.textLayer .highlight.pve {
+  background-color: rgba(80, 200, 120, 0.55) !important; // rgba(177,255,177, 0.6); // rgba(255, 0, 0, 0.6); //
+} 
+.textLayer .highlight.nve {
+  background-color: rgba(242,146,146, 0.8); // rgba(255, 0, 0, 0.6); //
+}
+
+.textLayer .highlight.guid {
+  background-color: rgba(255,193, 78, 0.7); // rgba(255, 0, 0, 0.6); //
+}
+
+.textLayer .highlight.line {
+  border-bottom: 3px solid rgba(80, 200, 120, 0.8) !important;  
+}
+
+// .textLayer .highlight.line ::selection {
+//   border-bottom: 3px solid rgba(80, 200, 120, 0.8) !important;  
+//   background: transparent !important;
+// }
+
+.nonselection ::selection { 
+  background: transparent !important;
+}
+// .selection ::selection { 
+//   background:rgba(159, 121, 238, 0.5);//rgba(255,0,0,0.5);rgb(174, 232, 255)
+// }
+
+.textLayer::selection { 
+  background:rgba(159, 121, 238, 0.5);//rgba(255,0,0,0.5);rgb(174, 232, 255)
+
+  // background: transparent !important;
+
+  // background:rgba(159, 121, 238, 0.5);//rgba(255,0,0,0.5);rgb(174, 232, 255)
+  // color: transparent !important;
+  // background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%) ;
+  // text-decoration-color: purple !important;
+  // text-decoration-line: underline overline 
+  // background: rgba(159, 121, 238, 0.5) !important;
+  // background-position: 0 100% !important;
+  // background-size: 100% 2px !important;
+  // background-repeat: repeat-x !important;
+  // border-bottom: 2px dashed #32557f !important;
+  // padding-bottom: 3px;
+} 
+
+.textLayer > div ::selection { 
+  background:rgba(159, 121, 238, 0.5);//rgba(255,0,0,0.5);rgb(174, 232, 255)
+  color: transparent !important;
+  // background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%) ;
+  // text-decoration-color: purple !important;
+  // text-decoration-line: underline overline 
+  // background: rgba(159, 121, 238, 0.5) !important;
+  // background-position: 0 100% !important;
+  // background-size: 100% 2px !important;
+  // background-repeat: repeat-x !important;
+  // border-bottom: 1px dashed red !important;
+  // padding-bottom: 3px;
+} 
+
+// .textLayer ::-moz-selection { 
+//   background: rgba(159, 121, 238, 0.5); //rgba(159, 121, 238, 0.5);//rgba(255,0,0,0.5); 
+//   text-decoration-color: purple !important;
+//   text-decoration-line: underline overline !important;
+// }
+
+// ::selection { 
+//   color: transparent !important;
+// } 
+
+// .textLayer .endOfContent {
+//   display: block;
+//   position: absolute;
+//   left: 0px;
+//   top: 100%;
+//   right: 0px;
+//   bottom: 0px;
+//   // z-index: -1;
+//   cursor: default;
+//   -webkit-user-select: none;
+//   -ms-user-select: none;
+//   -moz-user-select: none;
+// }
+
+.textLayer .endOfContent.active {
+  top: 0px;
+}
+.pdfOuterPage
+{
+  position: relative;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  margin: 1px auto;
+  // top: 40px;
+  bottom: 10px;
+  overflow: scroll;
+  text-align: center;
+  max-height: 100%;
+  // display: flex;
+  // align-items: center !important;
+
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // -webkit-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+
+}
+.pdfOuterPage.thumbarOpen
+{
+  right: 200px !important;
+}
+
+.pdfViewer {
+  // height: 100%;
+  // padding-top: 22px;
+  // margin-left: 190px;
+  transition: all 0.5s;
+  // background-color: #F1F3F7;
+  // position: fixed;
+  // left: 328px;
+  // right: 0;
+  // overflow: auto;
+  // height: 100vh;
+  // padding-top: 50px;
+  // align-items: center;
+  //   display: flex;
+  //   justify-content: center;
+  &.full {
+    margin-left: 0;
+  }
+}
+
+.pdfViewer .canvasWrapper {
+  overflow: hidden;
+}
+
+.pdfViewer .page {
+  direction: ltr;
+  width: 816px;
+  height: 1056px;
+  margin: 5px auto 8px auto;
+  position: relative;
+  overflow: visible;
+  background-clip: content-box;
+  box-shadow: 0 0 15px #bbbbbb;
+  // background-color: white;
+}
+
+.pdfViewer.removePageBorders .page {
+  margin: 0px auto 10px auto;
+  border: none;
+}
+
+div:focus 
+{
+  outline: none !important;
+}
+
+.pdfViewer.singlePageView {
+  display: inline-block;
+}
+
+.pdfViewer.singlePageView .page {
+  margin: 0;
+  border: none;
+}
+
+.pdfViewer .page canvas {
+  margin: 0;
+  display: block;
+}
+.pdfOuterPage::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  transition: 0.3s;
+  }
+  
+  
+  .pdfOuterPage::-webkit-scrollbar-track {
+  background: transparent;
+  }
+  
+  
+  .pdfOuterPage::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: gray;
+  }
+  
+  
+  .pdfOuterPage::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+  }
+  .pdfOuterPage::-webkit-scrollbar-corner{
+  background-color: #00000000;
+  }
+  .pdfOuterPage::-webkit-scrollbar-track-piece{
+  background-color: transparent;
+  }
+  .pdfOuterPage::-webkit-resizer {
+  background-color: transparent;
+  }
+
+  @media (max-width: 992px){
+  .pdfOuterPage
+  {
+    left: 0;
+  }
+  .pdfOuterPage.thumbarOpen
+  {
+    right: 128px;
+  }
+  }
+
+// .pdfViewer::-webkit-scrollbar {
+//   width: 7px;
+//   height: 7px;
+//   transition: 0.3s;
+//   }
+  
+  
+//   .pdfViewer::-webkit-scrollbar-track {
+//   background: transparent;
+//   }
+  
+  
+//   .pdfViewer::-webkit-scrollbar-thumb {
+//     border-radius: 15px;
+//     background-image: linear-gradient(180deg, #00C6FF, #0072FF);
+//   }
+  
+  
+//   .pdfViewer::-webkit-scrollbar-thumb:hover {
+//     background-image: linear-gradient(180deg, #00C6FF, #0072FF);
+//   }
+//   .pdfViewer::-webkit-scrollbar-corner{
+//   background-color: #00000000;
+//   }
+//   .pdfViewer::-webkit-scrollbar-track-piece{
+//   background-color: transparent;
+//   }
+//   .pdfViewer::-webkit-resizer {
+//   background-color: transparent;
+//   }
+
+//   @media (max-width: 992px){
+//     .pdfOuterPage
+//     {
+//       left: 250px;
+//     }
+//     .pdfOuterPage.thumbarOpen
+//     {
+//       right: 128px;
+//     }
+//     }

@@ -1,0 +1,68 @@
+.pdfOuterPage {
+  top: 0px;
+}
+
+.annotations {
+  background-color: #ffffff;
+  text-align: center;
+  width: 5%;
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+  box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.09);
+}
+
+.annontation-tool {
+  background-color: transparent;
+  border: none;
+  margin: 0.2rem auto 0.2rem auto;
+}
+
+.annotation-selected {
+  background-color: #c7d2dd;
+  border-radius: 5px;
+}
+
+.annotationLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.icon {
+  padding: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#content-wrapper {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 250px;
+  bottom: 0;
+  overflow: auto;
+}
+
+/* // @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap';
+
+// #viewer-container {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   overflow: auto;
+
+//   #viewer {
+//     width: 100%;
+//     // padding-top: 50px;
+//     background-color: #F1F3F7;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//   }
+  
+// }
+
+FFC107  ffc68f ffdf4b ffc68f; */

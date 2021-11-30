@@ -1,0 +1,69 @@
+@font-face {
+  font-family: AvenirRegular;
+  src: url(../font/AvenirLTStd-Book.otf);
+}
+@font-face {
+  font-family: AvenirMedium;
+  src: url(../font/AvenirLTStd-Medium.otf);
+}
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../font/AvenirLTStd-Roman.otf);
+}
+@font-face {
+  font-family: AvenirBold;
+  src: url(../font/AvenirNextLTPro-Bold.ttf);
+}
+@font-face {
+  font-family: AvenirHeavyCn;
+  src: url(../font/AvenirNextLTPro-HeavyCn.ttf);
+}
+
+body {
+  font-family: AvenirRegular !important;
+  background-color: #f5f6fb;
+}
+.middle-section {
+  padding: 0 40px 20px 210px;
+  background-color: #f5f6fb;
+  min-height: 100vh;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.rangeStyle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.selectStyle .ant-select-selector {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  height: 50px !important;
+}
+.selectStyle .ant-select-selection-placeholder {
+  line-height: 30px !important;
+}
+.selectStyle .ant-select-selection-search {
+  padding-top: 5px;
+}
+.ant-select-focused .ant-select-selector {
+  box-shadow: none !important;
+  border-color: #d9d9d9 !important;
+}
+.selectStyle:hover .ant-select-selector {
+  border-color: #d9d9d9 !important;
+}
+
+.ant-pagination {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.ant-picker-focused {
+  box-shadow: none !important;
+  border-color: #d9d9d9 !important;
+}
+
+.rangeStyle:hover {
+  border-color: #d9d9d9 !important;
+}
