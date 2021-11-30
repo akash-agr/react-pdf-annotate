@@ -84,10 +84,10 @@ const PDFPage = ({ setViewport }) => {
       // if(pdfViewer){pdfViewer._resetView()}
       // Url = 'https://thesis-application.s3.ap-south-1.amazonaws.com/IHCL.pdf' // https://thesis-application.s3.ap-south-1.amazonaws.com/ConCall.pdf
 
-      var apiUrl =
-        process.env.REACT_APP_Environment === "development"
-          ? "https://finsight.ai/api/utils/getFileSize"
-          : "/api/utils/getFileSize"; // 'http://localhost:5000/api/alerts/Keywordfilings'
+      var apiUrl = "https://finsight.ai/api/utils/getFileSize"
+        // process.env.REACT_APP_Environment === "development"
+        //   ? "https://finsight.ai/api/utils/getFileSize"
+        //   : "/api/utils/getFileSize"; // 'http://localhost:5000/api/alerts/Keywordfilings'
       var fileSize;
       // var PageView = false
 
